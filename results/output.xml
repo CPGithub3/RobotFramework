@@ -1,0 +1,2410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221121 16:44:01.915" rpa="false" schemaversion="3">
+<suite id="s1" name="Hrm Testcase" source="F:\Robotframework\Testcases\hrm_testcase.robot">
+<test id="s1-t1" name="opening orange hrm in browser" line="6">
+<kw name="Browser should be opened" library="hrm_demo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221121 16:44:02.484" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20221121 16:44:02.483" endtime="20221121 16:44:09.306"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221121 16:44:09.306" endtime="20221121 16:44:09.425"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221121 16:44:15.426" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20221121 16:44:09.425" endtime="20221121 16:44:15.426"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221121 16:44:15.441" level="INFO">Current page contains text 'Login'.</msg>
+<status status="PASS" starttime="20221121 16:44:15.426" endtime="20221121 16:44:15.441"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>text found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:15.441" endtime="20221121 16:44:15.441"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:02.482" endtime="20221121 16:44:15.441"/>
+</kw>
+<kw name="Enter Username" library="hrm_demo">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 16:44:15.453" endtime="20221121 16:44:15.482"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Username Found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:15.482" endtime="20221121 16:44:15.483"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:15.485" level="INFO">Clicking element 'xpath = //*[@name='username']'.</msg>
+<status status="PASS" starttime="20221121 16:44:15.483" endtime="20221121 16:44:15.576"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Username input clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:15.576" endtime="20221121 16:44:15.577"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:15.578" level="INFO">Typing text 'Admin' into text field 'xpath = //*[@name='username']'.</msg>
+<status status="PASS" starttime="20221121 16:44:15.577" endtime="20221121 16:44:15.752"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Username displayed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:15.752" endtime="20221121 16:44:15.753"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:15.441" endtime="20221121 16:44:15.754"/>
+</kw>
+<kw name="Enter Password" library="hrm_demo">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 16:44:15.755" endtime="20221121 16:44:15.776"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Passowrd Found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:15.777" endtime="20221121 16:44:15.778"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${pass}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:15.780" level="INFO">Clicking element 'xpath = //*[@name='password']'.</msg>
+<status status="PASS" starttime="20221121 16:44:15.778" endtime="20221121 16:44:15.884"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Password input clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:15.884" endtime="20221121 16:44:15.885"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pass}</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:15.886" level="INFO">Typing text 'admin123' into text field 'xpath = //*[@name='password']'.</msg>
+<status status="PASS" starttime="20221121 16:44:15.885" endtime="20221121 16:44:16.028"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Password accepted</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:16.028" endtime="20221121 16:44:16.029"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:15.755" endtime="20221121 16:44:16.029"/>
+</kw>
+<kw name="Click Login" library="hrm_demo">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 16:44:16.031" endtime="20221121 16:44:16.048"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login button found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:16.048" endtime="20221121 16:44:16.049"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:16.051" level="INFO">Clicking button 'xpath = //*[@type='submit']'.</msg>
+<status status="PASS" starttime="20221121 16:44:16.049" endtime="20221121 16:44:16.185"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login Button Clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221121 16:44:16.185" endtime="20221121 16:44:16.186"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:16.030" endtime="20221121 16:44:16.187"/>
+</kw>
+<kw name="Different module" library="hrm_demo">
+<kw name="click on side menu" library="hrm_demo">
+<arg>${rec_link}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${elment}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 16:44:16.190" endtime="20221121 16:44:18.084"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elment}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:18.086" level="INFO">Clicking element 'xpath = //*[@href='/web/index.php/recruitment/viewRecruitmentModule']'.</msg>
+<status status="PASS" starttime="20221121 16:44:18.085" endtime="20221121 16:44:19.584"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:16.188" endtime="20221121 16:44:19.585"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221121 16:44:22.586" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221121 16:44:19.586" endtime="20221121 16:44:22.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${job_drop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 16:44:22.586" level="INFO">Clicking element 'xpath = //*[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow']'.</msg>
+<status status="PASS" starttime="20221121 16:44:22.586" endtime="20221121 16:44:22.686"/>
+</kw>
+<kw name="job title drop down" library="hrm_demo">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>20</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:22.691" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:22.691" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:22.691" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:22.689" endtime="20221121 16:44:22.705"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:23.036" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-321.png"&gt;&lt;img src="selenium-screenshot-321.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:23.037" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:22.705" endtime="20221121 16:44:23.041"/>
+</kw>
+<msg timestamp="20221121 16:44:23.041" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:22.705" endtime="20221121 16:44:23.041"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.042" endtime="20221121 16:44:23.042"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.042" endtime="20221121 16:44:23.042"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.042" endtime="20221121 16:44:23.042"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:23.041" endtime="20221121 16:44:23.042"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:23.043" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:23.042" endtime="20221121 16:44:23.043"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:23.042" endtime="20221121 16:44:23.043"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:23.041" endtime="20221121 16:44:23.043"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:22.688" endtime="20221121 16:44:23.043"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:23.044" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:23.044" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:23.044" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:23.043" endtime="20221121 16:44:23.062"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:23.335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-322.png"&gt;&lt;img src="selenium-screenshot-322.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:23.335" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:23.064" endtime="20221121 16:44:23.348"/>
+</kw>
+<msg timestamp="20221121 16:44:23.348" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:23.063" endtime="20221121 16:44:23.348"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.349" endtime="20221121 16:44:23.349"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.350" endtime="20221121 16:44:23.350"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.350" endtime="20221121 16:44:23.350"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:23.349" endtime="20221121 16:44:23.350"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:23.351" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:23.350" endtime="20221121 16:44:23.351"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:23.350" endtime="20221121 16:44:23.351"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:23.349" endtime="20221121 16:44:23.351"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:23.043" endtime="20221121 16:44:23.351"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:23.351" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:23.351" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:23.351" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:23.351" endtime="20221121 16:44:23.384"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:23.766" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-323.png"&gt;&lt;img src="selenium-screenshot-323.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:23.767" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:23.385" endtime="20221121 16:44:23.769"/>
+</kw>
+<msg timestamp="20221121 16:44:23.769" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:23.385" endtime="20221121 16:44:23.770"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.771" endtime="20221121 16:44:23.771"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.771" endtime="20221121 16:44:23.771"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:23.772" endtime="20221121 16:44:23.772"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:23.770" endtime="20221121 16:44:23.773"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:23.774" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:23.773" endtime="20221121 16:44:23.774"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:23.773" endtime="20221121 16:44:23.774"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:23.770" endtime="20221121 16:44:23.774"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:23.351" endtime="20221121 16:44:23.774"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:23.777" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:23.777" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:23.778" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:23.775" endtime="20221121 16:44:23.850"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:24.247" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-324.png"&gt;&lt;img src="selenium-screenshot-324.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:24.247" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:23.851" endtime="20221121 16:44:24.250"/>
+</kw>
+<msg timestamp="20221121 16:44:24.250" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:23.850" endtime="20221121 16:44:24.250"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.251" endtime="20221121 16:44:24.251"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.251" endtime="20221121 16:44:24.251"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.252" endtime="20221121 16:44:24.252"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:24.251" endtime="20221121 16:44:24.252"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:24.252" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:24.252" endtime="20221121 16:44:24.253"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:24.252" endtime="20221121 16:44:24.253"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:24.250" endtime="20221121 16:44:24.253"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:23.774" endtime="20221121 16:44:24.253"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:24.255" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:24.255" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:24.255" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:24.253" endtime="20221121 16:44:24.275"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:24.614" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-325.png"&gt;&lt;img src="selenium-screenshot-325.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:24.615" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:24.276" endtime="20221121 16:44:24.615"/>
+</kw>
+<msg timestamp="20221121 16:44:24.615" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:24.275" endtime="20221121 16:44:24.615"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:24.615" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.615"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:24.253" endtime="20221121 16:44:24.615"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:24.620" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:24.620" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:24.620" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:24.618" endtime="20221121 16:44:24.635"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:24.941" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-326.png"&gt;&lt;img src="selenium-screenshot-326.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:24.941" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:24.637" endtime="20221121 16:44:24.944"/>
+</kw>
+<msg timestamp="20221121 16:44:24.944" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:24.635" endtime="20221121 16:44:24.944"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.945" endtime="20221121 16:44:24.945"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.945" endtime="20221121 16:44:24.945"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:24.946" endtime="20221121 16:44:24.946"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:24.944" endtime="20221121 16:44:24.946"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:24.947" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:24.946" endtime="20221121 16:44:24.947"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:24.946" endtime="20221121 16:44:24.947"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:24.944" endtime="20221121 16:44:24.947"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:24.615" endtime="20221121 16:44:24.947"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:24.949" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:24.949" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:24.949" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:24.948" endtime="20221121 16:44:24.971"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:25.375" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-327.png"&gt;&lt;img src="selenium-screenshot-327.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:25.375" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:24.973" endtime="20221121 16:44:25.378"/>
+</kw>
+<msg timestamp="20221121 16:44:25.379" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:24.972" endtime="20221121 16:44:25.379"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:25.380" endtime="20221121 16:44:25.380"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:25.380" endtime="20221121 16:44:25.380"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:25.381" endtime="20221121 16:44:25.381"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:25.379" endtime="20221121 16:44:25.381"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:25.382" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:25.382" endtime="20221121 16:44:25.382"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:25.381" endtime="20221121 16:44:25.382"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:25.379" endtime="20221121 16:44:25.382"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:24.947" endtime="20221121 16:44:25.383"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:25.385" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:25.386" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:25.386" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:25.383" endtime="20221121 16:44:25.411"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:25.784" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-328.png"&gt;&lt;img src="selenium-screenshot-328.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:25.784" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:25.413" endtime="20221121 16:44:25.786"/>
+</kw>
+<msg timestamp="20221121 16:44:25.786" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:25.412" endtime="20221121 16:44:25.786"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:25.787" endtime="20221121 16:44:25.787"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:25.787" endtime="20221121 16:44:25.787"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:25.788" endtime="20221121 16:44:25.788"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:25.787" endtime="20221121 16:44:25.788"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:25.788" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:25.788" endtime="20221121 16:44:25.788"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:25.788" endtime="20221121 16:44:25.789"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:25.786" endtime="20221121 16:44:25.789"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:25.383" endtime="20221121 16:44:25.789"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:25.790" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:25.790" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:25.790" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:25.789" endtime="20221121 16:44:25.809"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:26.127" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-329.png"&gt;&lt;img src="selenium-screenshot-329.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:26.127" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:25.810" endtime="20221121 16:44:26.129"/>
+</kw>
+<msg timestamp="20221121 16:44:26.129" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:25.809" endtime="20221121 16:44:26.129"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.130" endtime="20221121 16:44:26.130"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.130" endtime="20221121 16:44:26.130"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.130" endtime="20221121 16:44:26.130"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:26.129" endtime="20221121 16:44:26.130"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:26.131" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:26.131" endtime="20221121 16:44:26.131"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:26.130" endtime="20221121 16:44:26.131"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:26.129" endtime="20221121 16:44:26.131"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:25.789" endtime="20221121 16:44:26.131"/>
+</iter>
+<iter>
+<var name="${i}">10</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:26.133" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:26.133" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:26.133" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:26.131" endtime="20221121 16:44:26.148"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:26.448" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-330.png"&gt;&lt;img src="selenium-screenshot-330.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:26.448" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:26.149" endtime="20221121 16:44:26.450"/>
+</kw>
+<msg timestamp="20221121 16:44:26.452" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:26.148" endtime="20221121 16:44:26.452"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:26.452" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.452"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:26.131" endtime="20221121 16:44:26.452"/>
+</iter>
+<iter>
+<var name="${i}">11</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:26.452" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:26.452" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:26.452" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.473"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:26.785" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-331.png"&gt;&lt;img src="selenium-screenshot-331.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:26.786" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:26.474" endtime="20221121 16:44:26.788"/>
+</kw>
+<msg timestamp="20221121 16:44:26.789" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:26.473" endtime="20221121 16:44:26.789"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.789" endtime="20221121 16:44:26.789"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.789" endtime="20221121 16:44:26.789"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:26.790" endtime="20221121 16:44:26.790"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:26.789" endtime="20221121 16:44:26.790"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:26.791" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:26.790" endtime="20221121 16:44:26.791"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:26.790" endtime="20221121 16:44:26.791"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:26.789" endtime="20221121 16:44:26.791"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:26.452" endtime="20221121 16:44:26.791"/>
+</iter>
+<iter>
+<var name="${i}">12</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:26.794" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:26.794" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:26.794" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:26.792" endtime="20221121 16:44:26.816"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:27.110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-332.png"&gt;&lt;img src="selenium-screenshot-332.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:27.110" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:26.816" endtime="20221121 16:44:27.111"/>
+</kw>
+<msg timestamp="20221121 16:44:27.111" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:26.816" endtime="20221121 16:44:27.112"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.112" endtime="20221121 16:44:27.112"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.112" endtime="20221121 16:44:27.112"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.112" endtime="20221121 16:44:27.112"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:27.112" endtime="20221121 16:44:27.112"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:27.113" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:27.113" endtime="20221121 16:44:27.113"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:27.113" endtime="20221121 16:44:27.113"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:27.112" endtime="20221121 16:44:27.113"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:26.791" endtime="20221121 16:44:27.113"/>
+</iter>
+<iter>
+<var name="${i}">13</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:27.115" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:27.115" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:27.115" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:27.114" endtime="20221121 16:44:27.131"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:27.421" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-333.png"&gt;&lt;img src="selenium-screenshot-333.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:27.421" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:27.132" endtime="20221121 16:44:27.422"/>
+</kw>
+<msg timestamp="20221121 16:44:27.422" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:27.132" endtime="20221121 16:44:27.422"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.423" endtime="20221121 16:44:27.423"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.423" endtime="20221121 16:44:27.424"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.424" endtime="20221121 16:44:27.424"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:27.423" endtime="20221121 16:44:27.424"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:27.424" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:27.424" endtime="20221121 16:44:27.424"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:27.424" endtime="20221121 16:44:27.425"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:27.423" endtime="20221121 16:44:27.425"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:27.113" endtime="20221121 16:44:27.425"/>
+</iter>
+<iter>
+<var name="${i}">14</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:27.426" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:27.427" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:27.427" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:27.425" endtime="20221121 16:44:27.442"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:27.737" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-334.png"&gt;&lt;img src="selenium-screenshot-334.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:27.737" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:27.443" endtime="20221121 16:44:27.741"/>
+</kw>
+<msg timestamp="20221121 16:44:27.741" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:27.442" endtime="20221121 16:44:27.741"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.742" endtime="20221121 16:44:27.742"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.742" endtime="20221121 16:44:27.742"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:27.742" endtime="20221121 16:44:27.742"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:27.741" endtime="20221121 16:44:27.742"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:27.742" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:27.742" endtime="20221121 16:44:27.742"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:27.742" endtime="20221121 16:44:27.742"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:27.741" endtime="20221121 16:44:27.742"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:27.425" endtime="20221121 16:44:27.742"/>
+</iter>
+<iter>
+<var name="${i}">15</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:27.746" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:27.746" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:27.746" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:27.742" endtime="20221121 16:44:27.764"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:28.053" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-335.png"&gt;&lt;img src="selenium-screenshot-335.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:28.053" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:27.765" endtime="20221121 16:44:28.055"/>
+</kw>
+<msg timestamp="20221121 16:44:28.055" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:27.764" endtime="20221121 16:44:28.055"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.056" endtime="20221121 16:44:28.056"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.056" endtime="20221121 16:44:28.056"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.056" endtime="20221121 16:44:28.056"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:28.055" endtime="20221121 16:44:28.056"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:28.057" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:28.056" endtime="20221121 16:44:28.057"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:28.056" endtime="20221121 16:44:28.057"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:28.055" endtime="20221121 16:44:28.057"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:27.742" endtime="20221121 16:44:28.057"/>
+</iter>
+<iter>
+<var name="${i}">16</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:28.058" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:28.058" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:28.058" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:28.057" endtime="20221121 16:44:28.080"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:28.393" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-336.png"&gt;&lt;img src="selenium-screenshot-336.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:28.393" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:28.081" endtime="20221121 16:44:28.397"/>
+</kw>
+<msg timestamp="20221121 16:44:28.397" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:28.081" endtime="20221121 16:44:28.397"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.398" endtime="20221121 16:44:28.398"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.399" endtime="20221121 16:44:28.399"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.399" endtime="20221121 16:44:28.399"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:28.398" endtime="20221121 16:44:28.399"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:28.400" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:28.400" endtime="20221121 16:44:28.400"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:28.399" endtime="20221121 16:44:28.400"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:28.397" endtime="20221121 16:44:28.400"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:28.057" endtime="20221121 16:44:28.400"/>
+</iter>
+<iter>
+<var name="${i}">17</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:28.403" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:28.403" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:28.403" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:28.401" endtime="20221121 16:44:28.422"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:28.722" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-337.png"&gt;&lt;img src="selenium-screenshot-337.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:28.722" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:28.424" endtime="20221121 16:44:28.724"/>
+</kw>
+<msg timestamp="20221121 16:44:28.724" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:28.423" endtime="20221121 16:44:28.724"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.725" endtime="20221121 16:44:28.726"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.726" endtime="20221121 16:44:28.726"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:28.726" endtime="20221121 16:44:28.727"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:28.725" endtime="20221121 16:44:28.727"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:28.727" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:28.727" endtime="20221121 16:44:28.727"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:28.727" endtime="20221121 16:44:28.727"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:28.724" endtime="20221121 16:44:28.727"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:28.401" endtime="20221121 16:44:28.727"/>
+</iter>
+<iter>
+<var name="${i}">18</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:28.729" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:28.729" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:28.730" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:28.728" endtime="20221121 16:44:28.750"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:29.035" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-338.png"&gt;&lt;img src="selenium-screenshot-338.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:29.035" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:28.751" endtime="20221121 16:44:29.037"/>
+</kw>
+<msg timestamp="20221121 16:44:29.037" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:28.750" endtime="20221121 16:44:29.037"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:29.038" endtime="20221121 16:44:29.038"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:29.038" endtime="20221121 16:44:29.039"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:29.039" endtime="20221121 16:44:29.039"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:29.038" endtime="20221121 16:44:29.039"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:29.039" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:29.039" endtime="20221121 16:44:29.039"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:29.039" endtime="20221121 16:44:29.039"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:29.037" endtime="20221121 16:44:29.039"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:28.727" endtime="20221121 16:44:29.040"/>
+</iter>
+<iter>
+<var name="${i}">19</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:29.042" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:29.042" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:29.042" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:29.040" endtime="20221121 16:44:29.059"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:29.356" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-339.png"&gt;&lt;img src="selenium-screenshot-339.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:29.356" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:29.060" endtime="20221121 16:44:29.358"/>
+</kw>
+<msg timestamp="20221121 16:44:29.358" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:29.060" endtime="20221121 16:44:29.358"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:29.359" endtime="20221121 16:44:29.359"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:29.359" endtime="20221121 16:44:29.360"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:29.360" endtime="20221121 16:44:29.360"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:29.359" endtime="20221121 16:44:29.360"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:29.361" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:29.361" endtime="20221121 16:44:29.362"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:29.360" endtime="20221121 16:44:29.362"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:29.358" endtime="20221121 16:44:29.362"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:29.040" endtime="20221121 16:44:29.362"/>
+</iter>
+<status status="PASS" starttime="20221121 16:44:22.688" endtime="20221121 16:44:29.362"/>
+</for>
+<status status="PASS" starttime="20221121 16:44:22.687" endtime="20221121 16:44:29.363"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221121 16:44:39.363" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221121 16:44:29.363" endtime="20221121 16:44:39.363"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:16.188" endtime="20221121 16:44:39.363"/>
+</kw>
+<kw name="job title drop down" library="hrm_demo">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>20</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:39.371" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:39.371" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:39.372" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:39.368" endtime="20221121 16:44:39.402"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:39.708" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-340.png"&gt;&lt;img src="selenium-screenshot-340.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:39.708" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:39.403" endtime="20221121 16:44:39.708"/>
+</kw>
+<msg timestamp="20221121 16:44:39.708" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:39.402" endtime="20221121 16:44:39.708"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:39.708" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.708"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:39.367" endtime="20221121 16:44:39.708"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:39.708" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:39.708" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:39.708" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:39.708" endtime="20221121 16:44:39.732"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:40.008" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-341.png"&gt;&lt;img src="selenium-screenshot-341.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:40.008" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:39.734" endtime="20221121 16:44:40.008"/>
+</kw>
+<msg timestamp="20221121 16:44:40.008" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:39.733" endtime="20221121 16:44:40.008"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:40.008" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.008"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:39.708" endtime="20221121 16:44:40.008"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:40.008" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:40.008" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:40.008" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.026"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:40.287" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-342.png"&gt;&lt;img src="selenium-screenshot-342.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:40.287" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:40.027" endtime="20221121 16:44:40.289"/>
+</kw>
+<msg timestamp="20221121 16:44:40.289" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:40.026" endtime="20221121 16:44:40.289"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.289" endtime="20221121 16:44:40.289"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.289" endtime="20221121 16:44:40.290"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.290" endtime="20221121 16:44:40.290"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:40.289" endtime="20221121 16:44:40.290"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:40.290" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:40.290" endtime="20221121 16:44:40.290"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:40.290" endtime="20221121 16:44:40.290"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:40.289" endtime="20221121 16:44:40.290"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:40.008" endtime="20221121 16:44:40.291"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:40.292" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:40.292" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:40.292" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:40.291" endtime="20221121 16:44:40.309"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:40.561" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-343.png"&gt;&lt;img src="selenium-screenshot-343.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:40.561" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:40.310" endtime="20221121 16:44:40.577"/>
+</kw>
+<msg timestamp="20221121 16:44:40.577" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:40.309" endtime="20221121 16:44:40.577"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:40.577" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.577"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:40.291" endtime="20221121 16:44:40.577"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:40.577" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:40.577" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:40.577" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.594"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:40.859" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-344.png"&gt;&lt;img src="selenium-screenshot-344.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:40.859" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:40.594" endtime="20221121 16:44:40.860"/>
+</kw>
+<msg timestamp="20221121 16:44:40.861" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:40.594" endtime="20221121 16:44:40.861"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.861" endtime="20221121 16:44:40.861"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.861" endtime="20221121 16:44:40.861"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:40.862" endtime="20221121 16:44:40.862"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:40.861" endtime="20221121 16:44:40.862"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:40.862" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:40.862" endtime="20221121 16:44:40.863"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:40.862" endtime="20221121 16:44:40.863"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:40.861" endtime="20221121 16:44:40.863"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:40.577" endtime="20221121 16:44:40.863"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:40.864" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:40.864" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:40.864" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:40.863" endtime="20221121 16:44:40.880"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:41.158" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-345.png"&gt;&lt;img src="selenium-screenshot-345.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:41.158" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:40.881" endtime="20221121 16:44:41.158"/>
+</kw>
+<msg timestamp="20221121 16:44:41.158" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:40.881" endtime="20221121 16:44:41.158"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:41.158" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.158"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:40.863" endtime="20221121 16:44:41.158"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:41.158" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:41.158" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:41.158" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.178"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:41.480" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-346.png"&gt;&lt;img src="selenium-screenshot-346.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:41.481" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:41.178" endtime="20221121 16:44:41.483"/>
+</kw>
+<msg timestamp="20221121 16:44:41.483" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:41.178" endtime="20221121 16:44:41.483"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.484" endtime="20221121 16:44:41.484"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.484" endtime="20221121 16:44:41.484"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.485" endtime="20221121 16:44:41.485"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:41.483" endtime="20221121 16:44:41.485"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:41.486" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:41.485" endtime="20221121 16:44:41.486"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:41.485" endtime="20221121 16:44:41.486"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:41.483" endtime="20221121 16:44:41.486"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:41.158" endtime="20221121 16:44:41.486"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:41.489" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:41.489" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:41.489" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:41.487" endtime="20221121 16:44:41.507"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:41.823" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-347.png"&gt;&lt;img src="selenium-screenshot-347.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:41.823" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:41.508" endtime="20221121 16:44:41.823"/>
+</kw>
+<msg timestamp="20221121 16:44:41.823" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:41.507" endtime="20221121 16:44:41.823"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:41.823" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.823"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:41.486" endtime="20221121 16:44:41.823"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:41.823" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:41.823" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:41.823" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:41.823" endtime="20221121 16:44:41.844"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:42.145" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-348.png"&gt;&lt;img src="selenium-screenshot-348.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:42.146" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:41.845" endtime="20221121 16:44:42.147"/>
+</kw>
+<msg timestamp="20221121 16:44:42.147" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:41.844" endtime="20221121 16:44:42.147"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.147" endtime="20221121 16:44:42.147"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.148" endtime="20221121 16:44:42.148"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.148" endtime="20221121 16:44:42.148"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:42.147" endtime="20221121 16:44:42.148"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:42.149" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:42.148" endtime="20221121 16:44:42.149"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:42.148" endtime="20221121 16:44:42.149"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:42.147" endtime="20221121 16:44:42.149"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:41.823" endtime="20221121 16:44:42.149"/>
+</iter>
+<iter>
+<var name="${i}">10</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:42.150" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:42.151" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:42.151" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:42.149" endtime="20221121 16:44:42.159"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:42.392" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-349.png"&gt;&lt;img src="selenium-screenshot-349.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:42.392" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:42.160" endtime="20221121 16:44:42.392"/>
+</kw>
+<msg timestamp="20221121 16:44:42.392" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:42.159" endtime="20221121 16:44:42.392"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.392" endtime="20221121 16:44:42.392"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.392" endtime="20221121 16:44:42.392"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.392" endtime="20221121 16:44:42.392"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:42.392" endtime="20221121 16:44:42.392"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:42.407" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:42.407" endtime="20221121 16:44:42.407"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:42.392" endtime="20221121 16:44:42.407"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:42.392" endtime="20221121 16:44:42.407"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:42.149" endtime="20221121 16:44:42.407"/>
+</iter>
+<iter>
+<var name="${i}">11</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:42.407" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:42.407" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:42.407" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:42.407" endtime="20221121 16:44:42.407"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:42.642" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-350.png"&gt;&lt;img src="selenium-screenshot-350.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:42.642" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:42.407" endtime="20221121 16:44:42.642"/>
+</kw>
+<msg timestamp="20221121 16:44:42.642" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:42.407" endtime="20221121 16:44:42.642"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.642" endtime="20221121 16:44:42.642"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.642" endtime="20221121 16:44:42.642"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.642" endtime="20221121 16:44:42.642"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:42.642" endtime="20221121 16:44:42.658"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:42.658" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:42.658" endtime="20221121 16:44:42.658"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:42.658" endtime="20221121 16:44:42.658"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:42.642" endtime="20221121 16:44:42.658"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:42.407" endtime="20221121 16:44:42.658"/>
+</iter>
+<iter>
+<var name="${i}">12</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:42.658" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:42.658" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:42.658" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:42.658" endtime="20221121 16:44:42.658"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:42.910" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-351.png"&gt;&lt;img src="selenium-screenshot-351.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:42.910" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:42.658" endtime="20221121 16:44:42.910"/>
+</kw>
+<msg timestamp="20221121 16:44:42.910" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:42.658" endtime="20221121 16:44:42.910"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:42.910" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.910"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:42.658" endtime="20221121 16:44:42.910"/>
+</iter>
+<iter>
+<var name="${i}">13</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:42.910" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:42.910" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:42.910" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:42.910" endtime="20221121 16:44:42.925"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:43.163" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-352.png"&gt;&lt;img src="selenium-screenshot-352.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:43.163" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:42.925" endtime="20221121 16:44:43.163"/>
+</kw>
+<msg timestamp="20221121 16:44:43.163" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:42.925" endtime="20221121 16:44:43.163"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:43.163" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:42.910" endtime="20221121 16:44:43.163"/>
+</iter>
+<iter>
+<var name="${i}">14</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:43.163" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:43.163" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:43.163" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.163"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:43.444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-353.png"&gt;&lt;img src="selenium-screenshot-353.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:43.444" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.445"/>
+</kw>
+<msg timestamp="20221121 16:44:43.445" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.445"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.446" endtime="20221121 16:44:43.446"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.446" endtime="20221121 16:44:43.446"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.446" endtime="20221121 16:44:43.447"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:43.446" endtime="20221121 16:44:43.447"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:43.447" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:43.447" endtime="20221121 16:44:43.447"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:43.447" endtime="20221121 16:44:43.447"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:43.446" endtime="20221121 16:44:43.447"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:43.163" endtime="20221121 16:44:43.447"/>
+</iter>
+<iter>
+<var name="${i}">15</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:43.449" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:43.449" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:43.449" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:43.447" endtime="20221121 16:44:43.460"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:43.719" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-354.png"&gt;&lt;img src="selenium-screenshot-354.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:43.719" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:43.460" endtime="20221121 16:44:43.720"/>
+</kw>
+<msg timestamp="20221121 16:44:43.721" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:43.460" endtime="20221121 16:44:43.721"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.721" endtime="20221121 16:44:43.721"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.721" endtime="20221121 16:44:43.721"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.721" endtime="20221121 16:44:43.721"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:43.721" endtime="20221121 16:44:43.721"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:43.722" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:43.722" endtime="20221121 16:44:43.722"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:43.722" endtime="20221121 16:44:43.722"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:43.721" endtime="20221121 16:44:43.722"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:43.447" endtime="20221121 16:44:43.722"/>
+</iter>
+<iter>
+<var name="${i}">16</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:43.723" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:43.723" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:43.723" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:43.722" endtime="20221121 16:44:43.732"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:43.975" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-355.png"&gt;&lt;img src="selenium-screenshot-355.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:43.975" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:43.733" endtime="20221121 16:44:43.975"/>
+</kw>
+<msg timestamp="20221121 16:44:43.975" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:43.733" endtime="20221121 16:44:43.991"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:43.991" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:43.722" endtime="20221121 16:44:43.991"/>
+</iter>
+<iter>
+<var name="${i}">17</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:43.991" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:43.991" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:43.991" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:43.991" endtime="20221121 16:44:43.991"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:44.242" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-356.png"&gt;&lt;img src="selenium-screenshot-356.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:44.242" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:43.991" endtime="20221121 16:44:44.242"/>
+</kw>
+<msg timestamp="20221121 16:44:44.242" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:43.991" endtime="20221121 16:44:44.242"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:44.242" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.242"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:43.991" endtime="20221121 16:44:44.242"/>
+</iter>
+<iter>
+<var name="${i}">18</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:44.242" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:44.242" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:44.242" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.258"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:44.492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-357.png"&gt;&lt;img src="selenium-screenshot-357.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:44.492" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:44.258" endtime="20221121 16:44:44.492"/>
+</kw>
+<msg timestamp="20221121 16:44:44.492" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:44.258" endtime="20221121 16:44:44.492"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:44.492" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.492"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:44.242" endtime="20221121 16:44:44.492"/>
+</iter>
+<iter>
+<var name="${i}">19</var>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>none</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221121 16:44:44.492" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20221121 16:44:44.492" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20221121 16:44:44.492" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.508"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_2}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${net_admin}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221121 16:44:44.779" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-358.png"&gt;&lt;img src="selenium-screenshot-358.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 16:44:44.779" level="FAIL">Element with locator 'Network Administrator' not found.</msg>
+<status status="FAIL" starttime="20221121 16:44:44.508" endtime="20221121 16:44:44.780"/>
+</kw>
+<msg timestamp="20221121 16:44:44.780" level="INFO">${element_2} = False</msg>
+<status status="PASS" starttime="20221121 16:44:44.508" endtime="20221121 16:44:44.781"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_2}">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.781" endtime="20221121 16:44:44.781"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${net_admin}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.781" endtime="20221121 16:44:44.781"/>
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20221121 16:44:44.781" endtime="20221121 16:44:44.782"/>
+</kw>
+<status status="NOT RUN" starttime="20221121 16:44:44.781" endtime="20221121 16:44:44.782"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" library="BuiltIn">
+<arg>continue</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221121 16:44:44.782" level="INFO">continue</msg>
+<status status="PASS" starttime="20221121 16:44:44.782" endtime="20221121 16:44:44.782"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:44.782" endtime="20221121 16:44:44.782"/>
+</branch>
+<status status="PASS" starttime="20221121 16:44:44.781" endtime="20221121 16:44:44.782"/>
+</if>
+<status status="PASS" starttime="20221121 16:44:44.492" endtime="20221121 16:44:44.782"/>
+</iter>
+<status status="PASS" starttime="20221121 16:44:39.363" endtime="20221121 16:44:44.782"/>
+</for>
+<status status="PASS" starttime="20221121 16:44:39.363" endtime="20221121 16:44:44.782"/>
+</kw>
+<status status="PASS" starttime="20221121 16:44:02.480" endtime="20221121 16:44:44.782"/>
+</test>
+<status status="PASS" starttime="20221121 16:44:01.915" endtime="20221121 16:44:44.787"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Hrm Testcase">Hrm Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
